@@ -1,0 +1,7 @@
+To save and restore iptables rules, use 
+
+iptables-save > iptables.txt
+
+iptables-restore < iptables.txt
+
+NOTE: Use ip6tables-save/restore for ip6tables.
