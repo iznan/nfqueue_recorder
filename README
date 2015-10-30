@@ -1,7 +1,7 @@
 Launch the program as root, either with a destination pcap file or not, and send any ipv4 traffic that you want to it.
 
 ---------
-$ gcc -g -Wall -o nfqueue_recorder nfqueue_recorder.c -lnetfilter_queue -lpcap
+$ gcc -g -Wall -o nfqueue_recorder nfqueue_recorder.c -lnfnetlink  -lnetfilter_queue -lpcap
 
 $ sudo ./nfqueue_recorder -o todays-traffic.pcap
 
